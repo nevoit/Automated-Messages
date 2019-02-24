@@ -7,7 +7,7 @@ from datetime import datetime
 from datetime import time as clock
 import random
 
-# Config initialization
+# Config initialization -
 config = configparser.ConfigParser()
 config.read('config.ini')
 info = config['INFORMATION']
