@@ -17,7 +17,8 @@ contact_name = info['LOVER_PHONE_NAME']
 driver_path = setting['WEB_DRIVER']
 website_url = setting['WEBSITE_URL']
 lovers_json = setting['JSON_LOVERS']
-json_file = open(lovers_json)
+time_between_messages = int(float(setting['TIME_BETWEEN_MESSAGES'])*60*60)
+json_file = open(lovers_json, encoding='utf8')
 messages = json.load(json_file)
 
 browser = webdriver.Chrome(driver_path)
@@ -50,4 +51,4 @@ for i in range(5):
         key_in_dict, value_in_dict = random.choice(list(messages['day'].items()))
         message_to_send = "This is day time: " + value_in_dict
     document_element.send_keys(message_to_send + " " + Keys.ENTER)
-    time.sleep(10)
+    time.sleep(time_between_messages)
