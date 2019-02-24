@@ -1,0 +1,16 @@
+{
+  "morning": {
+    "0": "Good morning my love",
+    "1": "Good day"
+  },
+  "day": {
+    "0": "Hi, how are you?",
+    "1": "Whats up?",
+    "2": "I miss you",
+    "3": "I want to kiss you"
+  },
+  "night": {
+    "0": "Good night baby",
+    "1": "I will come to bed ASAP"
+  }
+}
