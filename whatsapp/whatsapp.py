@@ -11,13 +11,11 @@ import random
 config = configparser.ConfigParser()
 config.read(r'whatsapp\config.ini')
 setting = config['SETTINGS']
-
 # Setting up variable from config file
 driver_path = setting['WEB_DRIVER']
 website_url = setting['WEBSITE_URL']
-lovers_json = setting['JSON_LOVERS']
-time_between_messages = int(float(setting['TIME_BETWEEN_MESSAGES'])*60*60)
-json_file = open(lovers_json, encoding='utf8')
+msg_json = setting['JSON']
+json_file = open(msg_json, encoding='utf8')
 messages = json.load(json_file)
 time_to_sleep = int(setting['TIME_TO_SLEEP'])
 range_default = int(setting['RANGE'])
@@ -30,9 +28,9 @@ time_hour_start = int(setting['START_HOUR'])
 
 class WhatsApp(object):
 
-    def __init__(self, phone_name: str, hours_between_msg: float):
+    def __init__(self, contact_name: str, hours_between_msg: float):
         self.time_between_msg: int = int(hours_between_msg * 3600)  # hours to seconds
-        self.phone_name = phone_name
+        self.phone_name = contact_name
         self.browser = webdriver.Chrome(driver_path)
         self.browser.get(website_url)
         print("Please go to your smart phone -> WhatsApp -> WhatsApp Web -> Use the QR code reader to connect"
