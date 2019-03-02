@@ -1,4 +1,4 @@
-# Automated-Messages [![Known Vulnerabilities](https://snyk.io/test/github/nevoit/Automated-Messages/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/nevoit/Automated-Messages?targetFile=requirements.txt)
+# Automated-Messages [![Known Vulnerabilities](https://snyk.io/test/github/nevoit/Automated-Messages/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/nevoit/Automated-Messages?targetFile=requirements.txt) ![GitHub](https://img.shields.io/github/license/nevoit/Automated-Messages.svg) ![GitHub All Releases](https://img.shields.io/github/downloads/nevoit/Automated-Messages/total.svg)
 In this project, we aim to build an automated messages system using Python with Selenium. Whatsapp
 
 # Requirements
