@@ -6,4 +6,4 @@ In this project, we aim to build an automated messages system using Python with 
 2. Chrome WebDriver (https://sites.google.com/a/chromium.org/chromedriver/downloads).
     Please notice that you download the currect webdriver for your chrome
 3. Python3 (https://www.python.org/downloads/)
-4. Install the libraries from requiremets.txt
+4. Install the libraries from requiremets.txt using terminal: ```pip install -r requirements.txt```
