@@ -5,8 +5,8 @@
 In this project, we aim to build an automated messages system using Python with Selenium. Whatsapp
 
 # Quick start
-1. Chrome/Chromium Browser (https://www.google.com/chrome/browser)
-2. Chrome WebDriver (https://sites.google.com/a/chromium.org/chromedriver/downloads).
+1. Install Chrome/Chromium Browser (https://www.google.com/chrome/browser)
+2. Download Chrome WebDriver (https://sites.google.com/a/chromium.org/chromedriver/downloads).
     Please notice that you download the currect webdriver for your chrome
-3. Python3 (https://www.python.org/downloads/)
-4. Install the libraries from requiremets.txt using terminal: ```pip install -r requirements.txt```
+3. Install Python3 (https://www.python.org/downloads/)
+4. Install the external libraries from requiremets.txt using terminal: ```pip install -r requirements.txt```
