@@ -1,0 +1,15 @@
+{
+  "morning": {
+    "0": "Good morning",
+    "1": "Morning, how are you?"
+  },
+  "noon": {
+    "0": "Good day!",
+    "1": "How are you?",
+    "2": "What's up?"
+  },
+  "night": {
+    "0": "Good night",
+    "1": "Sleep?"
+  }
+}
