@@ -33,7 +33,7 @@ class WhatsApp(object):
 
     def run(self, contact_name: str, hours_between_msg: float, number_of_msg: int, messages: dict):
         time_between_msg: int = int(hours_between_msg * 3600)  # hours to seconds
-        phone_name = contact_name
+        phone_name = contact_name.encode("utf-8").decode("utf-8")
         # Finding the search element
         document_element = self.browser.find_element_by_xpath("//input[@title='Search or start new chat']")
         document_element.click()
