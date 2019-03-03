@@ -4,6 +4,8 @@
 
 In this project, we aim to build an automated messages system using Python with Selenium. Whatsapp
 
+![Whatsapp demo](https://github.com/nevoit/Automated-Messages/blob/master/images/demo1.PNG?raw=true)
+
 # Quick start
 1. Install Chrome/Chromium Browser (https://www.google.com/chrome/browser)
 2. Download Chrome WebDriver (https://sites.google.com/a/chromium.org/chromedriver/downloads).
