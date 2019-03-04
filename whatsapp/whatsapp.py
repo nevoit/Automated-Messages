@@ -30,6 +30,7 @@ class WhatsApp(object):
         print("Please go to your smart phone -> WhatsApp -> WhatsApp Web -> Use the QR code reader to connect"
               "\nNote: you have only {0} seconds to connect".format(time_to_sleep))
         time.sleep(time_to_sleep)  # time to connect
+        self.secure_code = random.SystemRandom()
 
     def run(self, contact_name: str, hours_between_msg: float, number_of_msg: int, messages: dict):
         time_between_msg: int = int(hours_between_msg * 3600)  # hours to seconds
@@ -54,13 +55,13 @@ class WhatsApp(object):
             now = datetime.now()
             now_time = now.time()
             if clock(time_night_start, time_hour_start) <= now_time <= clock(time_night_end, time_hour_start):
-                key_in_dict, value_in_dict = random.choice(list(messages['night'].items()))
+                key_in_dict, value_in_dict = self.secure_code.choice(list(messages['night'].items()))
                 message_to_send = value_in_dict
             elif clock(time_morning_start, time_hour_start) <= now_time <= clock(time_morning_end, time_hour_start):
-                key_in_dict, value_in_dict = random.choice(list(messages['morning'].items()))
+                key_in_dict, value_in_dict = self.secure_code.choice(list(messages['morning'].items()))
                 message_to_send = value_in_dict
             else:
-                key_in_dict, value_in_dict = random.choice(list(messages['noon'].items()))
+                key_in_dict, value_in_dict = self.secure_code.choice(list(messages['noon'].items()))
                 message_to_send = value_in_dict
             document_element.send_keys(message_to_send + " " + Keys.ENTER)
             time.sleep(time_between_msg)
