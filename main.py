@@ -6,7 +6,7 @@ if __name__ == '__main__':
 
     json_file = open(r"messages/whatsapp_friend_1.json", encoding='utf8')
     messages = json.load(json_file)
-    wa.run(contact_name="תזכורות", hours_between_msg=0.01, number_of_msg=15, messages=messages)
+    wa.run(contact_name="מקס רוסט", hours_between_msg=0.03, number_of_msg=15, messages=messages)
 
     json_file = open(r"messages/whatsapp_friend_2.json", encoding='utf8')
     messages = json.load(json_file)

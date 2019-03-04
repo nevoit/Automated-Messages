@@ -4,9 +4,9 @@
     "1": "Morning, how are you?"
   },
   "noon": {
-    "0": "Good day!",
-    "1": "How are you?",
-    "2": "What's up?"
+    "0": "היי",
+    "1": "מה קורה",
+    "2": "מה הולך"
   },
   "night": {
     "0": "Good night",
