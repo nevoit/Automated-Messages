@@ -1,0 +1,40 @@
+from getpass import getpass
+from fbchat.models import Message
+from fbchat.models import ThreadType
+from fbchat.models import FBchatException
+
+from fbchat import Client
+
+
+class Facebook:
+
+    def __init__(self, user_name):
+        self.username = user_name
+        try:
+            self.fb_client = Client(self.username, getpass())
+        except FBchatException:
+            print('Failed to log into facebook. Please check your credentials')
+
+    def send_message_friend(self, friend_name, msg):
+        try:
+            friends = self.fb_client.searchForUsers(friend_name, limit=1)
+            friend_user = friends[0]
+            friend_uid = friend_user.uid
+            sent = self.fb_client.send(Message(text=msg), thread_id=friend_uid,
+                                   thread_type=ThreadType.USER)
+            if sent:
+                print('Message sent successfully!')
+            else:
+                raise FBchatException("Couldn't send message")
+        except FBchatException:
+            print("Couldn't find any friends. Please check the name")
+            return
+
+
+    def send_message_group(self, group_name, msg):
+        try:
+            groups_list = self.fb_client.searchForGroups(group_name, limit=1)
+            group = groups_list[0]
+            group_uid = group
+        except FBchatException:
+            print("Couldn't find any groups. Please check the group name")
