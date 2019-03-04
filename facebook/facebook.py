@@ -1,9 +1,9 @@
 from getpass import getpass
-from fbchat.models import Message
-from fbchat.models import ThreadType
-from fbchat.models import FBchatException
 
 from fbchat import Client
+from fbchat.models import FBchatException
+from fbchat.models import Message
+from fbchat.models import ThreadType
 
 
 class Facebook:
@@ -21,7 +21,7 @@ class Facebook:
             friend_user = friends[0]
             friend_uid = friend_user.uid
             sent = self.fb_client.send(Message(text=msg), thread_id=friend_uid,
-                                   thread_type=ThreadType.USER)
+                                       thread_type=ThreadType.USER)
             if sent:
                 print('Message sent successfully!')
             else:
@@ -29,7 +29,6 @@ class Facebook:
         except FBchatException:
             print("Couldn't find any friends. Please check the name")
             return
-
 
     def send_message_group(self, group_name, msg):
         try:
