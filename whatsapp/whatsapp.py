@@ -1,10 +1,11 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import configparser
+import random
 import time
 from datetime import datetime
 from datetime import time as clock
-import random
+
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
 # Config initialization -
 config = configparser.ConfigParser()
