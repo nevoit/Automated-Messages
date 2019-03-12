@@ -1,6 +1,7 @@
 import json
 from whatsapp.whatsapp import WhatsApp
 from facebook.facebook import Facebook
+import traceback
 
 if __name__ == '__main__':
     """
@@ -17,8 +18,8 @@ if __name__ == '__main__':
 
     f = Facebook('shaked.eyal@protonmail.com')
     try:
-        f.send_message_friend('Nevo Itzhak', 'Send automatic from python')
+        f.get_user_birthday('Nevo Itzhak')
     except Exception:
-        print('Failed to send message')
+        traceback.print_exc()
 
     print("Goodbye :)")
