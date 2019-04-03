@@ -22,7 +22,7 @@ def main():
 def creat_logger():
     time_str = time.strftime("%d%m%Y-%H%M%S")
     log_file_name = 'automated_messages_' + time_str + '.log'
-    logging.basicConfig(format='%(asctime)s %(message)s', filename=log_file_name, level=logging.DEBUG)
+    logging.basicConfig(filename=log_file_name, level=logging.DEBUG)
     logging.info('Create log file')
 
 

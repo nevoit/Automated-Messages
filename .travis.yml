@@ -1,0 +1,14 @@
+dist: xenial
+language: python
+
+python:
+  - "3.7"
+
+install:
+  - pip install -r requirements.txt
+
+notifications:
+  email:
+    recipients:
+      - shaked.eyal@protonmail.com
+on_failure: always
