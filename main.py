@@ -8,11 +8,11 @@ def main():
     creat_logger()
     wa = WhatsApp()
 
-    json_file = open(r"messages/whatsapp_friend_1.json", encoding='utf8')
+    json_file = open(r"resources/messages/whatsapp_friend_1.json", encoding='utf8')
     messages = json.load(json_file)
-    wa.run(contact_name="תזכורות", hours_between_msg=0.01, number_of_msg=15, messages=messages)
+    wa.run(contact_name="תומר תואר", hours_between_msg=0.03, number_of_msg=15, messages=messages)
 
-    json_file = open(r"messages/whatsapp_friend_2.json", encoding='utf8')
+    json_file = open(r"resources/messages/whatsapp_friend_2.json", encoding='utf8')
     messages = json.load(json_file)
     wa.run(contact_name="Notes", hours_between_msg=0.01, number_of_msg=3, messages=messages)
 
