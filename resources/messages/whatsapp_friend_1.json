@@ -1,0 +1,15 @@
+{
+  "morning": {
+    "0": "Good morning",
+    "1": "Morning, how are you?"
+  },
+  "noon": {
+    "0": "היי",
+    "1": "מה קורה",
+    "2": "מה הולך"
+  },
+  "night": {
+    "0": "Good night",
+    "1": "Sleep?"
+  }
+}

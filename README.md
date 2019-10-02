@@ -4,9 +4,9 @@
 
 In this project, we aim to build an automated messages system using Python with Selenium. An example for whatsapp and sending random messages from pre-defined JSON:
 
-![Whatsapp demo](https://github.com/nevoit/Automated-Messages/blob/master/images/demo1.PNG?raw=true)
+![Whatsapp demo](https://github.com/nevoit/Automated-Messages/blob/master/resources/images/demo1.PNG?raw=true)
 
-![Whatsapp demo_json](https://github.com/nevoit/Automated-Messages/blob/master/images/demo2.PNG?raw=true)
+![Whatsapp demo_json](https://github.com/nevoit/Automated-Messages/blob/master/resources/images/demo2.PNG?raw=true)
 
 
 # Quick start
