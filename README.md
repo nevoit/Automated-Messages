@@ -11,6 +11,7 @@ In this project, we aim to build an automated messages system using Python with 
 
 # Contributing
 Contributions are very welcome!
+
 [![](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/images/0)](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/links/0)[![](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/images/1)](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/links/1)[![](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/images/2)](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/links/2)[![](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/images/3)](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/links/3)[![](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/images/4)](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/links/4)[![](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/images/5)](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/links/5)[![](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/images/6)](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/links/6)[![](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/images/7)](https://sourcerer.io/fame/nevoit/nevoit/Automated-Messages/links/7)
 
 # Quick start
